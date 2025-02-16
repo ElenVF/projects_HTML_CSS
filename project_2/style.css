@@ -1,0 +1,276 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+}
+
+header{background:url(images/bg.png);
+color: #fff;
+padding-left: 115px;
+padding-right: 75px;
+max-height: 1024px;
+
+}
+.nav_menu{display: flex;
+    justify-content: space-between;
+    max-width: 772px;
+}
+.nav_menu_logo{
+    padding-top:47px;
+}
+.container_img{
+    position: relative;
+    overflow:hidden;
+    width:500px;
+    height:897px;
+    margin-right: 75px;
+}
+.img_phone{
+   
+    position: absolute;
+   object-fit:cover;
+  
+    
+}
+
+.nav_menu_list{
+    display: flex;
+    justify-content: space-between;
+    width: 529px;
+    padding-top:74px;
+    font-family:"Istok Web",sans-serif;
+font-size: 18px;
+font-weight: 400;
+     
+}
+.container_list_title{
+    margin-top: 164px;
+}
+.container_list{
+    display: flex;
+    justify-content: space-between;
+}
+a{text-decoration: none;}
+
+.nav_list_link{color: #fff;}
+
+
+.container_list_title{
+    font-family:"Kenia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 150px;
+}
+
+
+.main_music{
+    /* background:rgb(213, 48, 5) ; */
+    background:linear-gradient(180deg,rgb(213, 48, 5) 95%, rgb(0, 0, 0) 100%);
+ height: 1024px;
+
+}
+.main_about{
+    background-color: #010001;
+    color: #fff;
+    height: 1024px;
+
+}
+.main_store{
+    background:linear-gradient(180deg,rgb(213, 48, 5) 95%, rgb(0, 0, 0) 100%);
+ height: 1024px;
+
+
+
+}
+main{font-family: "Karla", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;}
+h2{
+    
+    font-size: 30px;
+    padding-top: 83px;
+    padding-left: 122px;
+}
+.music_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 122px;
+
+    
+}
+
+.button_1{margin-bottom: 88px;}
+
+.button_1,.button_2{
+    border:1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: -4px -4px 30px rgba(255, 255, 255, 0.1),
+    4px 4px 4px  rgba(0, 0, 0, 0.5);
+    color:rgb(255, 255, 255);
+    
+    width: 382px;
+    font-size: 40px;
+    height: 83px;
+    background: radial-gradient(circle farthest-corner at 70px 50px,rgb(177, 62, 24),rgb(243, 80, 26));}
+    .button_1:hover,.button_2:hover{
+        box-shadow: -4px -4px 30px rgba(86, 56, 56, 0.685),
+        4px 4px 4px  rgba(128, 42, 42, 0.5);
+    }
+    .about_list{
+
+   margin-top: 365px;
+    }
+.about_text{
+    text-align: center;
+    font-size: 30px;
+}
+.store_list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 122px;
+    font-family: "Montserrat",sans-serif;
+}
+.store_list_text{
+    display: flex;
+    flex-direction: column;
+    width: 431px;
+
+}
+
+
+.store_list_buttons{margin-bottom: 87px;
+}
+
+    .store_list_button_1,.store_list_button_2{
+        border:1px solid rgba(0, 0, 0, 0.5);
+        border-radius: 50px;
+        box-shadow: -4px -4px 30px rgba(255, 255, 255, 0.1),
+        4px 4px 4px  rgba(0, 0, 0, 0.5);
+        color:rgb(255, 255, 255);
+        margin-bottom: 48px;
+        width: 382px;
+   
+        font-size: 20px;
+        height: 83px;
+        background: #020202E6;
+
+    }
+
+    .store_list_button_2{
+        background-color:rgb(255, 255, 255);
+        color:#020202E6;
+
+    }
+    .store_list_button_2:hover{
+        color:rgb(255, 255, 255);
+        background: #020202E6;
+
+
+    }
+    .store_list_button_1:hover{
+        background-color:rgb(255, 255, 255);
+        color: #020202E6;
+
+
+    }
+    .store_img{
+        position: relative;
+        overflow:hidden;
+        width:1104px;
+        height:685px;
+   
+   
+    }
+    .store_image{
+       
+        position: absolute;
+       object-fit:cover;
+      
+        
+    }
+    .store_list_description_title{
+
+margin-bottom: 17px;
+color: rgb(255, 255, 255);
+font-family: "Montserrat",sans-serif;
+font-size: 21px;
+font-weight: 600;
+line-height: 26px;
+letter-spacing: 0%;
+text-align: center;
+    }
+.store_list_description_text{
+    color: rgb(255, 255, 255);
+font-family: "Montserrat",sans-serif;
+    font-size: 18px;
+font-weight: 400;
+line-height: 22px;
+letter-spacing: 0%;
+text-align: center;
+}
+.store_list_description_link{
+   color: #040404CC;
+   border-bottom: 1px solid #040404CC;
+  
+
+}
+.footer{
+    color: rgb(255, 255, 255);
+    background-color: #010001;
+    height:  536px;
+}
+.footer_list{
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+    padding-top: 100px;
+    margin-left: 452px;
+   
+font-family: Montserrat;
+font-size: 20px;
+font-weight: 600;
+
+letter-spacing: 0%;
+}
+.footer_list_link{color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 0px;
+    letter-spacing: 0%;}
+.footer_list_title{margin-bottom: 15px;}
+.footer_list_text{margin-bottom: 10px;}
+
+.footer_music_title{
+    font-family:"Kenia", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 50px;
+    padding-top: 76px;
+    padding-bottom: 4px;
+    margin-left: 110px;
+}
+.footer_copyright{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+}
+.footer_copyright_title,.footer_copyright_link{
+    color: rgb(255, 255, 255);
+    font-family: Montserrat;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+letter-spacing: 0%;
+}
+a:hover{
+    color: rgb(213, 48, 5);
+}
+.store_list_description_link:hover{
+    color: #0088ff;
+    border-bottom:1px solid #0088ff;
+}
