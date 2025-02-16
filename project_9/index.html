@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Уютстрой</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='assets/css/style.css'>
+
+</head>
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            
+                <div class="logo-container">
+                    <div class="logo-img-container">
+                        <img src="assets/img/logo.png" alt="" class="logo-img">
+                    </div>
+                    <span class="logo-telephone">
+                        +7 962 811-52-46 <!-- Я бы убрал -->
+                    </span>
+                </div>
+                <nav class="nav">
+                    <ul class="nav-links">
+                        <li class="nav-link"><a href="#about">О НАС</a></li>
+                        <li class="nav-link"><a href="#works">МЫ ДЕЛАЕМ</a></li>
+                        <li class="nav-link"><a href="#stages">ЭТАПЫ РАБОТ</a></li>
+                        <li class="nav-link"><a href="#advantages">НАШИ ПРЕИМУЩЕСТВА</a></li>
+                        <li class="nav-link"><a href="#contacts">КОНТАКТЫ</a></li>
+                    </ul>
+                    <div class="nav-menu-modal-container">
+                        <img src="assets/img/menu.png" alt="" onclick="document.querySelector('.nav-menu-modal-links').classList.toggle('active')" width="40px" class="nav-menu-btn">
+                        <ul class="nav-menu-modal-links">
+                            <li class="nav-link"><a href="#about" onclick="document.querySelector('.nav-menu-modal-links').classList.toggle('active')" >О НАС</a></li>
+                            <li class="nav-link"><a href="#works" onclick="document.querySelector('.nav-menu-modal-links').classList.toggle('active')">МЫ ДЕЛАЕМ</a></li>
+                            <li class="nav-link"><a href="#stages" onclick="document.querySelector('.nav-menu-modal-links').classList.toggle('active')">ЭТАПЫ РАБОТ</a></li>
+                            <li class="nav-link"><a href="#advantages" onclick="document.querySelector('.nav-menu-modal-links').classList.toggle('active')">НАШИ ПРЕИМУЩЕСТВА</a></li>
+                            <li class="nav-link"><a href="#contacts" onclick="document.querySelector('.nav-menu-modal-links').classList.toggle('active')">КОНТАКТЫ</a></li>
+                        </ul>
+                    </div>
+                    
+                </nav> 
+            
+        </div>
+    </header>
+    
+    <section class="main">
+        <div class="main-img-container">
+            <img src="assets/img/main.png" alt="" class="main-img">
+        </div>
+        <div class="container">
+            <h1 class="main-title">
+                СТРОИМ НАСТОЯЩЕЕ <br>
+                ДЛЯ ВАШЕГО БУДУЩЕГО
+            </h1>
+            <button type="button" class="main-feedback-btn" onclick="toggleModalForm()"> связаться с нами</button>
+        </div>
+        <div class="modal-form">
+            <div class="modal-close" onclick="toggleModalForm()"><img src="assets/img/close.png" alt=""></div>
+            <div class="container">
+                <form action="">
+                    <div class="form-input">
+                        <input type="text" name="name">
+                        <h5 class="modal-form-title">ВАШЕ ИМЯ </h5>
+                        
+                    </div>
+                    <div class="form-input">
+                        <input type="text" name="tel" pattern="[0-9+]*">
+                        <h5 class="modal-form-title">НОМЕР ТЕЛЕФОНА </h5>
+                        
+                    </div>
+    
+                    <div class="form-input">
+                        <input type="email" name="email">
+                        <h5 class="modal-form-title">E-MAIL</h5>
+                        
+                    </div>
+                    <button type="submit" class="form-submit">
+                        ОТПРАВИТЬ ЗАЯВКУ
+                    </button>
+                </form>
+
+                <script>
+                    const inputs=document.querySelectorAll('.form-input input');
+                    inputs.forEach(input => {
+                        input.addEventListener('focus', ()=>{
+                            input.classList.add('active')
+                        })
+                        input.addEventListener('blur', ()=>{
+                            (input.value=='') ? input.classList.remove('active') : ''
+                        })
+                    });
+
+                </script>
+
+
+                <div class="modal-img-container">
+                    <img src="assets/img/modal.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="about" id="about">
+        <h3 class="section-title">о нас</h3>
+        <div class="container">
+            <div class="about-img-container">
+                <img src="assets/img/about.png" alt="" class="about-img">
+            </div>
+            <div class="about-text-container">
+                <ul class="about-text">
+                    <li>Наша компания занимается строительством домов из всех видов материалов под ключ </li>
+                    <li>Мы не только строим дома, но и гарантируем полное сопровождение проекта с момента составления сметы до ввода объекта в эксплуатацию </li>
+                    <li>Мы уверены в качестве нашей работы и готовы подтвердить это гарантиями и рекомендациями наших довольных клиентов</li>
+                    
+
+                </ul>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="works" id="works">
+        <h3 class="section-title">мы делаем</h3>
+        <div class="container">
+            <div class="works-houses-container">
+                <div class="works-house">
+                    <div class="works-house-img-container">
+                        <img src="assets/img/house1.png" alt="" class="works-house-img">
+                    </div>
+                    <h5 class="works-house-title">ДОМ ИЗ БРЕВНА</h5>
+                </div>
+                <div class="works-house">
+                    <div class="works-house-img-container">
+                        <img src="assets/img/house2.png" alt="" class="works-house-img">
+                    </div>
+                    <h5 class="works-house-title">ДОМ ИЗ КИРПИЧА,
+                        ГАЗОБЕТОНА</h5>
+                </div>
+                <div class="works-house">
+                    <div class="works-house-img-container">
+                        <img src="assets/img/house3.png" alt="" class="works-house-img">
+                    </div>
+                    <h5 class="works-house-title">ДОМ ИЗ БРУСА</h5>
+                </div>
+                <div class="works-house">
+                    <div class="works-house-img-container">
+                        <img src="assets/img/house4.png" alt="" class="works-house-img">
+                    </div>
+                    <h5 class="works-house-title">БАНЯ</h5>
+                </div>
+            </div>
+            <p class="works-text">Мы готовы работать по вашим собственным проектам, а также можем разработать проект вместе с вами</p>
+        </div>
+    </section>
+    <hr>
+    <section class="stages" id="stages">
+        <h3 class="section-title">ЭТАПЫ РАБОТ</h3>
+        <div class="stages-container">
+            <div class="section-border"></div>
+            <div class="stages-img-container">
+                <img src="assets/img/stages.png" alt="" class="stages-img">
+                
+            </div>
+            <div class="stages-blocks container">
+                <div class="stage-block">
+                    <h4 class="stage-block-title">
+                        ЛИЧНАЯ ВСТРЕЧА
+                    </h4>
+                    <div class="stage-block-steps">
+                        <h5 class="stage-block-step">ОБСУЖДЕНИЕ ПРОЕКТА</h5>
+                        <h5 class="stage-block-step">СОГЛАСОВАНИЕ СРОКОВ</h5>
+                    </div>
+                </div>
+                <div class="stage-block">
+                    <h4 class="stage-block-title">
+                        ЗАКЛЮЧЕНИЕ ДОГОВОРА
+                    </h4>
+                    <div class="stage-block-steps">
+                        <h5 class="stage-block-step">ИНЖЕНЕРНО-ГЕОЛОГИЧЕСКИЕ РАБОТЫ</h5>
+                        <h5 class="stage-block-step">ЗАКУПКА МАТЕРИАЛОВ</h5>
+                    </div>
+                </div>
+                <div class="stage-block">
+                    <h4 class="stage-block-title">
+                        СТРОИТЕЛЬНЫЕ РАБОТЫ
+                    </h4>
+                    <div class="stage-block-steps">
+                        <h5 class="stage-block-step">КАПИТАЛЬНОЕ СТРОИТЕЛЬСТВО ДОМА</h5>
+                        <h5 class="stage-block-step">ИНЖЕНЕРИЯ И ОТДЕЛКА</h5>
+                    </div>
+                </div>
+                <div class="stage-block">
+                    <h4 class="stage-block-title">
+                        СДАЧА ОБЪЕКТА
+                    </h4>
+                    <div class="stage-block-steps">
+                        <h5 class="stage-block-step">ВВОД В ЭКСПЛУАТАЦИЮ</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <section class="advantages" id="advantages">
+        <h3 class="section-title">Наши ПРЕИМУЩЕСТВА</h3>
+        <div class="advantages-blocks">
+            <div class="advantages-blocks-row">
+                <div class="advantages-block">
+                    <h5 class="advantages-block-title">КАЧЕСТВЕННЫЕ МАТЕРИАЛЫ</h5>
+                    <div class="advantages-block-img-container">
+                        <img src="assets/img/tree.png" alt="" class="advantages-block-img">
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <h5 class="advantages-block-title">ГАРАНТИЯ РЕЗУЛЬТАТА</h5>
+                    <div class="advantages-block-img-container">
+                        <img src="assets/img/medal.png" alt="" class="advantages-block-img">
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <h5 class="advantages-block-title">ОСУЩЕСТВЛЕНИЕ ПОЛНОГО ЦИКЛА ИНЖЕНЕРНЫХ РАБОТ</h5>
+                    <div class="advantages-block-img-container">
+                        <img src="assets/img/cycle.png" alt="" class="advantages-block-img">
+                    </div>
+                </div>
+            </div>
+            <div class="advantages-blocks-row">
+                <div class="advantages-block">
+                    <h5 class="advantages-block-title">ДОСТУПНЫЕ ЦЕНЫ</h5>
+                    <div class="advantages-block-img-container">
+                        <img src="assets/img/prices.png" alt="" class="advantages-block-img">
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <h5 class="advantages-block-title">СОБЛЮДЕНИЕ СРОКОВ</h5>
+                    <div class="advantages-block-img-container">
+                        <img src="assets/img/time.png" alt="" class="advantages-block-img">
+                    </div>
+                </div>
+                <div class="advantages-block">
+                    <h5 class="advantages-block-title">ПРОФЕССИОНАЛЬНЫЕ СПЕЦИАЛИСТЫ</h5>
+                    <div class="advantages-block-img-container">
+                        <img src="assets/img/specialists.png" alt="" class="advantages-block-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <footer class="contacts" id="contacts">
+        <h3 class="section-title">
+            контакты
+        </h3>
+        <div class="contacts-container">
+            <div class="section-border"></div>
+            
+            
+            <div class="contacts-inside-container">
+                <span class="contacts-telephone">Наш номер телефона: +7 962 811-52-46</span>
+                <hr class="contacts-border"> <hr class="contacts-border">
+                <span class="contacts-email">e-mail: stroicomfort2023@yandex.ru</span>
+                <div class="contacts-social-links">
+                    <a href="#"><svg>
+                        <use xlink:href="sprite.svg#telegram"></use>
+                    </svg></a>
+                    <a href="#"><svg>
+                        <use xlink:href="sprite.svg#vk"></use>
+                    </svg></a>
+                    <a href="#"><svg>
+                        <use xlink:href="sprite.svg#telephone"></use>
+                    </svg></a>
+                </div>
+            </div>
+            <div class="contacts-img-container">
+                <img src="assets/img/contacts.png" alt="" class="contacts-img">
+            </div>
+        </div>
+    </footer>
+    
+</div>
+<script>
+function toggleModalForm(){
+    const modal=document.querySelector('.modal-form')
+    const wrapper=document.querySelector('.wrapper')
+    modal.classList.toggle('active')
+    wrapper.classList.toggle('active')
+}
+
+</script>
+</body>
+</html>
